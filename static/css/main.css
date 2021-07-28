@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     font-family: sans-serif;
-    background-color: lightblue;
+    background-image: url("https://pixabay.com/get/g73e287f3f69b0f8baffc91c89872a00c4ea6f06fe23cc7095723ab54767d1279b35f10cf28fd5133fb2bb8ef699321c8_1920.jpg");
+
 }
 
 .content {

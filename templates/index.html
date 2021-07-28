@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Task Master</title>
+<title>AMDb</title>
 {% endblock %}
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Task Master</h1>
+    <h1 style="text-align: center">꧁༒☬AMDb☬༒꧂</h1>
     {% if tasks|length < 1 %}
-    <h4 style="text-align: center">There are no tasks. Create one below!</h4>
+    <h4 style="text-align: center">There are no movies in queue. Create one below!</h4>
     {% else %}
     <table>
         <tr>
-            <th>Task</th>
-            <th>Added</th>
+            <th>Movie</th>
+            <th>Date</th>
             <th>Actions</th>
         </tr>
         {% for task in tasks %}
@@ -33,7 +33,7 @@
     <div class="form">
         <form action="/" method="POST">
             <input type="text" name="content" id="content">
-            <input type="submit" value="Add Task">
+            <input type="submit" value="New">
         </form>
     </div>
 </div>
